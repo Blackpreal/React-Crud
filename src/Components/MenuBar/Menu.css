@@ -1,0 +1,30 @@
+.Button{
+    position: absolute;
+    width: 15%;
+    right: 10px;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1;  
+}
+.Button:before{
+    content: "";
+    position: absolute;    
+    border-style: solid;
+    border-color: black;
+    border-width:5px 50px 20px 70px;
+    transform: rotate(360deg);
+    z-index: -1;
+    transition: 1s;
+    transform-origin: left;
+}
+.Button:hover:before{
+    border-color: #00f;
+    transform: rotate(20deg);
+}
